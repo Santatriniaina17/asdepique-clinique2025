@@ -4,24 +4,23 @@ import QueryForm from "../../features/query/components/QueryForm/QueryForm";
 import Header from "../../layouts/Header/Header";
 import { Stack, Typography } from "@mui/material";
 import Input from "../../shared/components/Input/Input";
-import ontologyDomain from "../../shared/constants/ontologyDomain";
+import { useState } from "react";
 
 const Home: HomeComponent = () => {
-    return (
-        <StyledContainer>
-            <Header/>
-            <Stack className="body">
-                <Typography variant="h6">Éditeur de texte malagasy</Typography>
-                <Stack className="form">
-                    <QueryForm/>
-                    <Input
-                        disabled
-                        value={ontologyDomain}
-                    />
-                </Stack>
-            </Stack>
-        </StyledContainer>
-    )
-}
+  const [domain, setDomain] = useState<string>("");
 
-export default Home
+  return (
+    <StyledContainer>
+      <Header />
+      <Stack className="body">
+        <Typography variant="h6">Éditeur de texte malagasy</Typography>
+        <Stack className="form">
+          <QueryForm onDomainChange={setDomain} />
+          <Input disabled value={domain} />
+        </Stack>
+      </Stack>
+    </StyledContainer>
+  );
+};
+
+export default Home;

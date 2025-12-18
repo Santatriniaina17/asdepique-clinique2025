@@ -1,2 +1,2 @@
-const ontologyDomain = "Fory"
-export default ontologyDomain
+const ontologyDomain = "Domaine";
+export default ontologyDomain;

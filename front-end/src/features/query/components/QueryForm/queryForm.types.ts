@@ -1,5 +1,5 @@
 import type { FC } from "react";
 
-export type QueryFormComponent = FC<
-    {}
->
+export type QueryFormComponent = FC<{
+  onDomainChange: (domain: string) => void;
+}>;
