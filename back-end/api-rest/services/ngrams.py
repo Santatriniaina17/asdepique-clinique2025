@@ -1,37 +1,28 @@
-from collections import defaultdict
-
-def train_bigrams(corpus):
-    bigrams = defaultdict(list)
-    words = corpus.lower().split()
-
-    for i in range(len(words) - 1):
-        bigrams[words[i]].append(words[i + 1])
-
-    return bigrams
+from rapidfuzz import process
+from services.fallback_lexicon import local_fallback_lexicon
+from services.mediawiki import fetch_words_by_prefix
 
 
-def predict_with_prefix(text, model, lexicon, limit=5):
+def fuzzy_fallback(prefix, lexicon, limit=3):
+    return [w for w, _, _ in process.extract(prefix, lexicon, limit=limit)]
+
+
+def predict_on_demand(text, limit=5):
     if not text.strip():
         return []
 
-    words = text.lower().split()
+    prefix = text.lower().split()[-1]
 
-    # Cas 1 : un seul mot incomplet
-    if len(words) == 1:
-        prefix = words[0]
-        return [w for w in lexicon if w.startswith(prefix)][:limit]
+    # 1️⃣ Wikipedia ciblée
+    suggestions = fetch_words_by_prefix(prefix)
 
-    # Cas 2 : contexte + mot incomplet
-    context = words[-2]
-    prefix = words[-1]
-
-    candidates = model.get(context, [])
-
-    # Filtrer par préfixe
-    suggestions = [w for w in candidates if w.startswith(prefix)]
-
-    # Fallback dictionnaire
+    # 2️⃣ Fallback local
     if not suggestions:
-        suggestions = [w for w in lexicon if w.startswith(prefix)]
+        local = local_fallback_lexicon()
+        suggestions = [w for w in local if w.startswith(prefix)]
 
-    return list(set(suggestions))[:limit]
+    # 3️⃣ Fuzzy (dernier recours)
+    if not suggestions:
+        suggestions = fuzzy_fallback(prefix, local_fallback_lexicon())
+
+    return suggestions[:limit]

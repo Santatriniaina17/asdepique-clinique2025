@@ -1,13 +1,11 @@
 from flask import Flask
-from api.spellcheck import spellcheck_bp
+from flask_cors import CORS
 from api.autocomplete import autocomplete_bp
-from api.sentiment import sentiment_bp
 
 app = Flask(__name__)
+CORS(app)
 
-app.register_blueprint(spellcheck_bp, url_prefix="/api")
 app.register_blueprint(autocomplete_bp, url_prefix="/api")
-app.register_blueprint(sentiment_bp, url_prefix="/api")
 
 @app.route("/")
 def home():
