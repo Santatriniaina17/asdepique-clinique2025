@@ -13,7 +13,8 @@ const getFormDirection = (labelPlacement: LabelPlacement) => {
 
 export const StyledContainer = styled(Stack, {
     shouldForwardProp: (prop) => !["labelplacement"].includes(prop as string)
-})<ContainerProps>(({ labelplacement }) => ({
+})<ContainerProps>(({ labelplacement, theme }) => ({
+    background: "#d8d8d8",
     "& .field-container": {
         alignItems: ["top", "bottom"].includes(labelplacement) ? "start" : "center",
         flexDirection: getFormDirection(labelplacement),
@@ -34,5 +35,10 @@ export const StyledContainer = styled(Stack, {
     "&>.MuiStack-root": {
         width: "100%",
         gap: "5px",
-    }
+    },
+    "& .MuiOutlinedInput-root": {
+        "& fieldset": {
+            borderColor: theme.palette.primary.main,
+        },
+    },
 }))

@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 
-const primary = "#ff0000"
+const primary = "#0d5f19"
 const secondary = "#0000ff"
 const defaultTheme = createTheme({
     palette: {
@@ -14,11 +14,12 @@ const defaultTheme = createTheme({
     },
     components: {
         MuiTypography: {
-            styleOverrides: { root: { color: "#333333" } }
+            styleOverrides: { root: { color: "#242424" } }
         }
     },
     custom: {
-        background: "#ededed"
+        background: "#ededed",
+        header: "#242424"
     }
 })
 

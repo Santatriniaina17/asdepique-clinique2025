@@ -19,10 +19,10 @@ const QueryForm: QueryFormComponent = () => {
         <StyledContainer>
             <FormProvider {...methods}>
                 <Input
-                    variant="filled"
-                    label="Soraty eto pr"
                     name="query"
                     type="text"
+                    multiline
+                    minRows={15}
                 />
             </FormProvider>
         </StyledContainer>
