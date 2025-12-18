@@ -1,0 +1,696 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/ontologia/fombandrazana#"
+     xml:base="http://example.org/ontologia/fombandrazana"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://example.org/ontologia/fombandrazana"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#ataoAoAminny -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#ataoAoAminny">
+        <owl:inverseOf rdf:resource="http://example.org/ontologia/fombandrazana#toeranaAnaovanaNy"/>
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#ToeranaMasina"/>
+        <rdfs:label xml:lang="mg">atao ao amin&apos;ny</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#ataonny -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#ataonny">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#MpandrayAnjara"/>
+        <rdfs:label xml:lang="mg">ataon&apos;ny</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#hajainNy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#hajainNy">
+        <owl:inverseOf rdf:resource="http://example.org/ontologia/fombandrazana#manaja"/>
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Razana"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:label xml:lang="mg">hajain&apos;ny</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#hajainaAminny -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#hajainaAminny">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#Fady"/>
+        <rdfs:label xml:lang="mg">hajaina amin&apos;ny</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#mampiasaZavatra -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#mampiasaZavatra">
+        <owl:inverseOf rdf:resource="http://example.org/ontologia/fombandrazana#zavatraAmpiasainNy"/>
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#ZavatraMasina"/>
+        <rdfs:label xml:lang="mg">mampiasa zavatra</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#manaja -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#manaja">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#Razana"/>
+        <rdfs:label xml:lang="mg">manaja</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#manamafySoatoavina -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#manamafySoatoavina">
+        <owl:inverseOf rdf:resource="http://example.org/ontologia/fombandrazana#soatoavinaHamafisinNy"/>
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#SoatoavinaAraKolontsaina"/>
+        <rdfs:label xml:lang="mg">manamafy soatoavina</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#mifandrayAminny -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#mifandrayAminny">
+        <rdfs:label xml:lang="mg">mifandray amin&apos;ny</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#soatoavinaHamafisinNy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#soatoavinaHamafisinNy">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#SoatoavinaAraKolontsaina"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:label xml:lang="mg">soatoavina hamafisin&apos;ny</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#toeranaAnaovanaNy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#toeranaAnaovanaNy">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#ToeranaMasina"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:label xml:lang="mg">toerana anaovana ny</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#zavatraAmpiasainNy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/ontologia/fombandrazana#zavatraAmpiasainNy">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#ZavatraMasina"/>
+        <rdfs:range rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:label xml:lang="mg">zavatra ampiasain&apos;ny</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#daty -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontologia/fombandrazana#daty">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label xml:lang="mg">daty</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#fanamarihana -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontologia/fombandrazana#fanamarihana">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="mg">fanamarihana</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#mananaFotoana -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontologia/fombandrazana#mananaFotoana">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="mg">manana fotoana</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#masinaVe -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/ontologia/fombandrazana#masinaVe">
+        <rdfs:domain rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="mg">masina ve</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fady -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Fady">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:label xml:lang="mg">Fady</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Famadihana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Famadihana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/ontologia/fombandrazana#mampiasaZavatra"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/ontologia/fombandrazana#LambaMena"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/ontologia/fombandrazana#manaja"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/ontologia/fombandrazana#Razana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/ontologia/fombandrazana#ataoAoAminny"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/ontologia/fombandrazana#Fasana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="mg">Famadihana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fanajana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Fanajana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#SoatoavinaAraKolontsaina"/>
+        <rdfs:label xml:lang="mg">Fanajana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#FanambadianaNentinDrazana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#FanambadianaNentinDrazana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:label xml:lang="mg">Fanambadiana nentin-drazana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#FandevenanaNentinDrazana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#FandevenanaNentinDrazana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:label xml:lang="mg">Fandevenana nentin-drazana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fasana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Fasana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#ToeranaMasina"/>
+        <rdfs:label xml:lang="mg">Fasana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fety -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Fety">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#HetsikaAraSosialy"/>
+        <rdfs:label xml:lang="mg">Fety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fianakaviana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Fianakaviana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#MpandrayAnjara"/>
+        <rdfs:label xml:lang="mg">Fianakaviana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fihavanana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Fihavanana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#SoatoavinaAraKolontsaina"/>
+        <rdfs:label xml:lang="mg">Fihavanana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#FivoriamPianakaviana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#FivoriamPianakaviana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#HetsikaAraSosialy"/>
+        <rdfs:label xml:lang="mg">Fivoriam-pianakaviana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy">
+        <rdfs:label xml:lang="mg">Fomba-drazana malagasy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fombafomba -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Fombafomba">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:label xml:lang="mg">Fombafomba</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Hasina -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Hasina">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#SoatoavinaAraKolontsaina"/>
+        <rdfs:label xml:lang="mg">Hasina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#HetsikaAraSosialy -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#HetsikaAraSosialy">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:label xml:lang="mg">Hetsika ara-tsosialy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#LambaMena -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#LambaMena">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#ZavatraMasina"/>
+        <rdfs:label xml:lang="mg">Lamba mena</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Lanona -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Lanona">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#HetsikaAraSosialy"/>
+        <rdfs:label xml:lang="mg">Lanona</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#MpandrayAnjara -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#MpandrayAnjara">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:label xml:lang="mg">Mpandray anjara</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Mpikabary -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Mpikabary">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#MpandrayAnjara"/>
+        <rdfs:label xml:lang="mg">Mpikabary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#OlonaVelona -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#OlonaVelona">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#MpandrayAnjara"/>
+        <rdfs:label xml:lang="mg">Olona velona</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Omby -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Omby">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#ZavatraMasina"/>
+        <rdfs:label xml:lang="mg">Omby</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#RayAmanDreny -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#RayAmanDreny">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#MpandrayAnjara"/>
+        <rdfs:label xml:lang="mg">Ray aman-dreny</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Razana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Razana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#MpandrayAnjara"/>
+        <rdfs:label xml:lang="mg">Razana</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#SoatoavinaAraKolontsaina -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#SoatoavinaAraKolontsaina">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:label xml:lang="mg">Soatoavina ara-kolontsaina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Tanana -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Tanana">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#ToeranaMasina"/>
+        <rdfs:label xml:lang="mg">Tanàna</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#ToeranaMasina -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#ToeranaMasina">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:label xml:lang="mg">Toerana masina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Tromba -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Tromba">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#Fombafomba"/>
+        <rdfs:label xml:lang="mg">Tromba</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Vodiondry -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#Vodiondry">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#ZavatraMasina"/>
+        <rdfs:label xml:lang="mg">Vodiondry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#ZavatraMasina -->
+
+    <owl:Class rdf:about="http://example.org/ontologia/fombandrazana#ZavatraMasina">
+        <rdfs:subClassOf rdf:resource="http://example.org/ontologia/fombandrazana#FombaDrazanaMalagasy"/>
+        <rdfs:label xml:lang="mg">Zavatra masina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Ankohonana_Rabe -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Ankohonana_Rabe">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Fianakaviana"/>
+        <rdfs:label xml:lang="mg">Ankohonan&apos;i Rabe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fady_TsyMihinanaTrondro -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Fady_TsyMihinanaTrondro">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Fady"/>
+        <rdfs:label xml:lang="mg">Fady: tsy mihinana trondro amin&apos;ny andro lanonana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fady_TsyMitabatabaAkaikinFasana -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Fady_TsyMitabatabaAkaikinFasana">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Fady"/>
+        <rdfs:label xml:lang="mg">Fady: tsy mitabataba akaikin&apos;ny fasana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Famadihana_2016_Andrambato -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Famadihana_2016_Andrambato">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Famadihana"/>
+        <ataoAoAminny rdf:resource="http://example.org/ontologia/fombandrazana#Fasana_Andrambato"/>
+        <ataonny rdf:resource="http://example.org/ontologia/fombandrazana#Ankohonana_Rabe"/>
+        <mampiasaZavatra rdf:resource="http://example.org/ontologia/fombandrazana#LambaMena_Batch2023"/>
+        <manaja rdf:resource="http://example.org/ontologia/fombandrazana#Razana_Bekoto"/>
+        <daty rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-03</daty>
+        <rdfs:label xml:lang="mg">Famadihana 2016 - Andrambato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Famadihana_2023_Andrambato -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Famadihana_2023_Andrambato">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Famadihana"/>
+        <ataoAoAminny rdf:resource="http://example.org/ontologia/fombandrazana#Fasana_Andrambato"/>
+        <ataonny rdf:resource="http://example.org/ontologia/fombandrazana#Ankohonana_Rabe"/>
+        <hajainaAminny rdf:resource="http://example.org/ontologia/fombandrazana#Fady_TsyMihinanaTrondro"/>
+        <hajainaAminny rdf:resource="http://example.org/ontologia/fombandrazana#Fady_TsyMitabatabaAkaikinFasana"/>
+        <mampiasaZavatra rdf:resource="http://example.org/ontologia/fombandrazana#LambaMena_Batch2023"/>
+        <mampiasaZavatra rdf:resource="http://example.org/ontologia/fombandrazana#Omby_Lohasaha"/>
+        <manaja rdf:resource="http://example.org/ontologia/fombandrazana#Razana_Bekoto"/>
+        <manaja rdf:resource="http://example.org/ontologia/fombandrazana#Razana_Rasoa"/>
+        <manamafySoatoavina rdf:resource="http://example.org/ontologia/fombandrazana#Fihavanana_Instance"/>
+        <manamafySoatoavina rdf:resource="http://example.org/ontologia/fombandrazana#Hasina_Instance"/>
+        <daty rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-08-12</daty>
+        <fanamarihana xml:lang="mg">Natao taorian&apos;ny fanamboarana fasana.</fanamarihana>
+        <mananaFotoana xml:lang="mg">Isaky ny 5–7 taona</mananaFotoana>
+        <rdfs:label xml:lang="mg">Famadihana 2023 - Andrambato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fasana_Andrambato -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Fasana_Andrambato">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Fasana"/>
+        <masinaVe rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</masinaVe>
+        <rdfs:label xml:lang="mg">Fasana fianakaviana Andrambato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fihavanana_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Fihavanana_Instance">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Fihavanana"/>
+        <rdfs:label xml:lang="mg">Fihavanana (soatoavina)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Fivoriana_Fianakaviana_2023 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Fivoriana_Fianakaviana_2023">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#FivoriamPianakaviana"/>
+        <mifandrayAminny rdf:resource="http://example.org/ontologia/fombandrazana#Famadihana_2023_Andrambato"/>
+        <rdfs:label xml:lang="mg">Fivoriam-pianakaviana 2023</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Hasina_Instance -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Hasina_Instance">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Hasina"/>
+        <rdfs:label xml:lang="mg">Hasina (soatoavina)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#LambaMena_Batch2023 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#LambaMena_Batch2023">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#LambaMena"/>
+        <masinaVe rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</masinaVe>
+        <rdfs:label xml:lang="mg">Lamba mena (Batch 2023)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Lanona_Famadihana2023 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Lanona_Famadihana2023">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Lanona"/>
+        <mifandrayAminny rdf:resource="http://example.org/ontologia/fombandrazana#Famadihana_2023_Andrambato"/>
+        <rdfs:label xml:lang="mg">Lanona famadihana 2023</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Mpikabary_DadaRija -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Mpikabary_DadaRija">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Mpikabary"/>
+        <mifandrayAminny rdf:resource="http://example.org/ontologia/fombandrazana#Lanona_Famadihana2023"/>
+        <rdfs:label xml:lang="mg">Mpikabary Dada Rija</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Omby_Lohasaha -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Omby_Lohasaha">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Omby"/>
+        <rdfs:label xml:lang="mg">Omby Lohasaha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#RayAmanDreny_Tantely -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#RayAmanDreny_Tantely">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#RayAmanDreny"/>
+        <rdfs:label xml:lang="mg">Ray aman-dreny Tantely</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Razana_Bekoto -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Razana_Bekoto">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Razana"/>
+        <rdfs:label xml:lang="mg">Razana Bekoto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Razana_Rasoa -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Razana_Rasoa">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Razana"/>
+        <rdfs:label xml:lang="mg">Razana Rasoa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Tanana_Ambatolampy -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Tanana_Ambatolampy">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Tanana"/>
+        <mifandrayAminny rdf:resource="http://example.org/ontologia/fombandrazana#Fasana_Andrambato"/>
+        <rdfs:label xml:lang="mg">Tanàna Ambatolampy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Tromba_Session_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Tromba_Session_2024">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Tromba"/>
+        <ataonny rdf:resource="http://example.org/ontologia/fombandrazana#RayAmanDreny_Tantely"/>
+        <manamafySoatoavina rdf:resource="http://example.org/ontologia/fombandrazana#Hasina_Instance"/>
+        <daty rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-20</daty>
+        <rdfs:label xml:lang="mg">Tromba Session 2024</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/ontologia/fombandrazana#Vodiondry_Kits -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/ontologia/fombandrazana#Vodiondry_Kits">
+        <rdf:type rdf:resource="http://example.org/ontologia/fombandrazana#Vodiondry"/>
+        <rdfs:label xml:lang="mg">Vodiondry (kit)</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
