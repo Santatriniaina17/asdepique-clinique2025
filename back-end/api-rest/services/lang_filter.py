@@ -5,7 +5,7 @@ FRENCH_SUFFIXES = (
 )
 
 INVALID_MG_PATTERNS = (
-    "nb", "mk", "dt", "bp", "sz","th", "sn", "nl","dn","nf"
+    "nb", "mk", "dt", "bp", "sz","th", "sn", "nl","dn","nf","tt","fv", "ss"
 )
 
 def is_malagasy_like(word):
