@@ -33,7 +33,8 @@ nom :ANDRIANAVALONA
 prénom(s) :Haritefisoa
 classe :IGGLIA 5
 numéro :17
-Membre 6 
+
+Membre 6 :
 
 nom :RANDRIANTAHINA
 prénom(s) :Rantoniaina
