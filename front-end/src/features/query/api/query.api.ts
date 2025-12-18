@@ -8,7 +8,7 @@ export const sendQueryRequest = async (credentials: QueryFormData): Promise<any>
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(credentials),
+    body: JSON.stringify({ text: credentials.query }),
   })
 
   if (!response.ok) {

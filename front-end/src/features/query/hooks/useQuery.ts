@@ -5,7 +5,8 @@ import { fetchQ, sendQueryRequest } from "../api/query.api"
 const useQuery = () => {
     const { mutateAsync: sendQuery, isPending: isLoading, error } = useMutation({
         mutationFn: async (credentials: QueryFormData) => {
-            const response = await sendQueryRequest(credentials)
+            const { suggestions } = await sendQueryRequest(credentials)
+            return suggestions
         },
     })
 
